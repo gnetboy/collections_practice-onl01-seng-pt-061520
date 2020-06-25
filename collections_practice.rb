@@ -31,6 +31,9 @@ def sum_array(array)
 end
 
 def add_s(array)
-    array.each_with_index.collect{|element|element+"s"}
+   notouch = array[1]
+    copy = array.each_with_index.collect{|element|element+"s"}
+    copy[1] = notouch
+    
      
 end
